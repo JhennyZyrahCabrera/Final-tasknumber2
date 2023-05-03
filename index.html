@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Task 2</title>
+    <script type="text/javascript" src="myjavascript2.js"></script>
+    <style>
+        #main
+        {
+            background-color:lightblue;
+            padding: 15px;
+            display: inline-block;
+            border: 2px solid black;
+            background-image: url(logo.jpg);
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-blend-mode:overlay;
+        }
+        #calculation
+        {
+            background-color: rgb(250, 195, 204);
+            padding: 15px;
+            border: 2px solid black;
+            margin-top: 10px;
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+   
+	<h2>Basketball Order Form</h2>
+    <div id="main">
+		Basketball Products:
+		<input type="text" size="5" id="quantity" value="0">
+		<button type="button" onclick="increment()">+</button>
+		<button type="button" onclick="decrement()">-</button>
+		<br>
+        <br>
+        Shipping & Handling Fee:
+		<input type="text" size="5" id="shipping">
+	</div>
+    <div id="calculation">
+        Items:
+        <input type="text" size="5" id="items" readonly>
+        <br>
+        <br>
+        Shipping & Handling Fee:
+		<input type="text" size="5" id="shippings" readonly>
+        <br>
+        <br>
+		Total Before Tax:
+		<input type="text" size="5" id="total-before-tax"  readonly>
+		<br>
+        <br>
+		Estimated Tax(10%):
+		<input type="text" size="5" id="estimated-tax"  readonly>
+		<br>
+        <br>
+		Total Order:
+		<input type="text" size="5" id="total-order"  readonly>
+    </div>
+	
+</body>
+</html>
